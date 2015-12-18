@@ -1,0 +1,540 @@
+*{
+    margin:0;
+    padding:0;
+    border:0;
+}
+.vwo-page{
+    position: absolute;
+    top:0;
+    left:0;
+    bottom:0;
+    right:0;
+    background-color: #FFF;
+}
+.vwo-w2{
+    width:20%;
+    display: inline-block;
+}
+
+.vwo-w3{
+    width:30%;
+    display: inline-block;
+}
+
+.vwo-w4{
+    width:40%;
+    display: inline-block;
+}
+
+.vwo-w5{
+    width:50%;
+    display: inline-block;
+}
+
+.vwo-w6{
+    width:60%;
+    display: inline-block;
+}
+
+.vwo-w7{
+    width:70%;
+    display: inline-block;
+}
+
+.vwo-w8{
+    width:80%;
+    display: inline-block;
+}
+
+.vwo-w10{
+    width:100%;
+    display: inline-block;
+}
+
+.vwo-row{
+    text-align: left;
+    padding:5px 0;
+}
+
+.vwo-fn14{
+    font-size: 14px;
+}
+
+.vwo-fn15{
+    font-size: 15px;
+}
+
+.vwo-fn16{
+    font-size: 16px;
+}
+
+.vwo-fn20{
+    font-size: 20px;
+}
+
+.vwo-fn22{
+    font-size: 22px;
+}
+.vwo-p05{
+    padding:5px;
+}
+.vwo-p1-vertical{
+    padding:10px 0;
+}
+.vwo-p1-horizontal{
+    padding:0 10px;
+}
+
+.vwo-p1{
+    padding:10px;
+}
+.vwo-p2{
+    padding:20px;
+}
+
+.vwo-m1-top{
+    margin-top:10px;
+}
+
+.vwo-m1-vertical{
+    margin:10px 0;
+}
+.vwo-m1-horizontal{
+    margin:0 10px;
+}
+.vwo-m1{
+    margin:10px;
+}
+
+.vwo-bold{
+    font-weight: bold;
+}
+
+.vwo-input{
+    width:100%;
+    padding:10px 0;
+    height:20px;
+    vertical-align: bottom;
+}
+
+.vwo-left{
+    text-align: left;
+}
+
+.vwo-right{
+    text-align: right;
+}
+
+.vwo-center{
+    text-align: center;
+}
+.vwo-C9C6C3{
+    color:#C9C6C3;
+}
+.vwo-FFFFFF{
+    color:#FFF;
+}
+.vwo-EC682F{
+     color:#EC682F;
+ }
+.vwo-7FB1D1{
+    color:#7FB1D1;
+}
+.vwo-A9A9A9{
+    color:#A9A9A9;
+}
+.vwo-B8B8B8{
+    color:#B8B8B8;
+}
+.vwo-E9E9E9{
+    color:#E9E9E9;
+}
+.vwo-328EC1{
+    color:#328EC1;
+}
+.vwo-F17F53{
+    color:#F17F53;
+}
+.vwo-267AB4{
+    color:#267AB4;
+}
+.vwo-90AFb6{
+    color:#90AFb6;
+}
+.vwo-424242{
+    color:#424242;
+}
+
+.vwo-radius4{
+    border-radius: 4px;
+}
+
+.vwo-B-46AAE2{
+    border-color: #46AAE2;
+}
+.vwo-B-60C8B5{
+    border-color: #60C8B5;
+}
+.vwo-B-328EC1{
+    border:1px solid #328EC1;
+}
+.vwo-B-DFE0E1{
+    border:1px solid #DFE0E1;
+}
+.vwo-BG-FFFFFF{
+    background-color: #FFFFFF;
+}
+.vwo-BG-F6F5F7{
+    background-color: #F6F5F7;
+}
+.vwo-BG-F7F8F9{
+    background-color: #F7F8F9;
+}
+.vwo-BG-F9F9F9{
+    background-color: #F9F9F9;
+}
+.vwo-BG-DFE0E1{
+    background-color: #DFE0E1;
+}
+
+.vwo-BG-FAC733{
+    background-color: #FAC733;
+}
+
+.vwo-button{
+    width:100%;
+    height:20px;
+    line-height: 20px;
+    padding:10px 0;
+    display: inline-block;
+    color:#7D501D;
+}
+
+.vwo-dialog{
+    position: fixed;
+    z-index: 13;
+    width: 85%;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    background-color: #FAFAFC;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.vwo-tip{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.vwo-tip:before {
+    right: 0;
+    border-width: 0 16px 16px;
+    border-color: #F6F5F7 transparent;
+}
+.vwo-tip:before, .vwo-tip:after {
+    content: "";
+    position: absolute;
+    border-style: solid;
+    bottom: 0;
+}
+.vwo-tip:after {
+    right: 2px;
+    border-width: 0px 14px 14px;
+    border-color: #F6F5F7 transparent;
+}
+.vwo-tip:before, .vwo-tip:after {
+    content: "";
+    position: absolute;
+    border-style: solid;
+    bottom: 0;
+}
+
+/**阴影*/
+.vwo-shdow{
+    -moz-box-shadow:2px 2px 10px #06c;
+    -webkit-box-shadow:2px 2px 10px #06c;
+    box-shadow:2px 2px 10px #06c;
+}
+
+
+@-webkit-keyframes slideIn{
+    from{
+        -webkit-transform:translate3d(100%,0,0);
+        transform:translate3d(100%,0,0)
+    }
+    to{
+        -webkit-transform:translate3d(0,0,0);
+        transform:translate3d(0,0,0)
+    }
+}
+@keyframes slideIn{
+    from{
+        -webkit-transform:translate3d(100%,0,0);
+        transform:translate3d(100%,0,0)
+    }
+    to {
+        -webkit-transform:translate3d(0,0,0);
+        transform:translate3d(0,0,0)
+    }
+}
+@-webkit-keyframes slideOut{
+    from{
+        -webkit-transform:translate3d(0,0,0);
+        transform:translate3d(0,0,0)
+    }
+    to{
+        -webkit-transform:translate3d(100%,0,0);
+        transform:translate3d(100%,0,0)
+    }
+}
+@keyframes slideOut{
+    from{
+        -webkit-transform:translate3d(0,0,0);
+        transform:translate3d(0,0,0)
+    }
+    to{
+        -webkit-transform:translate3d(100%,0,0);
+        transform:translate3d(100%,0,0)
+    }
+}
+.vwo-page.slideIn{
+    -webkit-animation:slideIn .2s forwards;
+    animation:slideIn .2s forwards
+}
+.vwo-page.slideOut{
+    -webkit-animation:slideOut .2s forwards;
+    animation:slideOut .2s forwards
+}
+
+
+/***/
+
+.foodFace{
+    height:100px;
+    right:20px;
+    top:75%;
+    position: absolute;
+    text-align: right;
+}
+
+.foodFace > a{
+    display: inline-block;
+}
+
+.foodFace > img{
+    height:100%;
+    vertical-align: top;
+    border:1px solid #ccc;
+}
+
+.userFood{
+    padding:10px 10px 0 80px;
+    position: relative;
+}
+.userFood > img{
+    position: absolute;
+    top:10px;
+    left:10px;
+    width:60px;
+    height:60px;
+}
+
+.userFood > h3{
+    font-weight: inherit;
+}
+
+.userFood > p{
+    font-size:14px;
+}
+
+.foodChat{
+    padding:10px 10px 10px 100px;
+}
+.foodChat > div:first-child{
+    width:100px;
+    height:60px;
+    position: absolute;
+    left:10px;
+}
+.foodChat > div:first-child > img{
+    width:60px;
+    height:60px;
+    vertical-align: top;
+}
+
+.comment{
+    background-image:url(../images/comment.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    right:20px;
+    width:20px;
+    height:20px;
+    margin-top:5px;
+}
+
+.foodBtn{
+    padding: 5px 10px;
+    display: inline-block;
+    border-radius: 25px;
+    color: #ccc;
+    width: 100px;
+    border-width: 2px;
+    border-style: solid;
+}
+
+.foodIon{
+    border-radius: 25px;
+    background-color: #F18053;
+    width: 25px;
+    height: 25px;
+    color: #FFFFFF;
+    display: inline-block;
+    line-height: 25px;
+    font-style: inherit;
+    text-align: center;
+}
+
+.foodHelp{
+    position:absolute;
+    right:10px;
+    top:20px;
+    width:60px;
+    height:60px;
+    text-align: center;
+}
+
+.foodHelp > img{
+    width:100%;
+    height:100%;
+}
+
+.foodHelp > span{
+    position: absolute;
+    margin-top: 10px;
+    display: block;
+    width:100%;
+    text-align: center;
+    top: 0;
+    color:#fff;
+}
+
+.instructions{
+    font-style: italic;
+    text-decoration: underline;
+}
+
+.vwo-dialog h1{
+    padding-left:20px;
+    font-weight: inherit;
+    color:#F39133;
+}
+
+.vwo-dialog ul{
+    padding:10px 10px 20px 40px;
+}
+
+.vwo-dialog ul li{
+    list-style-type: decimal;
+}
+
+.bg-dialog{
+    background: url('../images/popup_bg.png') #FFF repeat-x;
+    background-position: -10px -30px;
+}
+
+.box{
+    background: url('../images/line.png') #FFF repeat-x;
+    background-position: 0px -10px;
+}
+
+.shopImg{
+    background-image: url('../images/shop.png');
+    background-size: cover;
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    vertical-align: text-top;
+}
+.groom-tools{
+    width: 100%;
+    position: absolute;
+    height: 40px;
+    bottom: 0px;
+    background-color: #000;
+    opacity: 0.8;
+}
+.groom-menu{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+.groom-menu div{
+    height: 40px;
+    float: left;
+    line-height: 40px;
+    display: block;
+    width: 50%;
+    text-align: center;
+}
+.groom-menu .active{
+    color:#FFF;
+}
+
+.imgBtn{
+    position: absolute;
+    width:120px;
+    bottom:40px;
+    right:10px;
+    text-align: right;
+}
+.spinner {
+    font-size: 20px;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    box-shadow: inset 0 0 0 .1em rgba(58, 168, 237, .2);
+}
+
+.spinner i {
+    position: absolute;
+    clip: rect(0, 1em, 1em, .5em);
+    width: 200px;
+    height: 200px;
+    animation: spinner-circle-clipper 1s ease-in-out infinite;
+}
+
+@keyframes spinner-circle-clipper {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(180deg);
+    }
+}
+
+.spinner i:after {
+    position: absolute;
+    clip: rect(0, 1em, 1em, .5em);
+    width: 1em;
+    height: 1em;
+    content: '';
+    animation: spinner-circle 1s ease-in-out infinite;
+    border-radius: 50%;
+    box-shadow: inset 0 0 0 .1em #3aa8ed;
+}
+
+@keyframes spinner-circle {
+    0% {
+        transform: rotate(-180deg);
+    }
+
+    100% {
+        transform: rotate(180deg);
+    }
+}

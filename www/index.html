@@ -1,10 +1,66 @@
 <!DOCTYPE html>
-<html>
-<head lang="en">
+<html lang="en">
+<head>
     <meta charset="UTF-8">
-    <title></title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+    <title>朋友美食圈</title>
+    <link rel="stylesheet" href="styles/weui.css"/>
+    <link rel="stylesheet" type="text/css" href="styles/style.css"/>
 </head>
-<body>
+<body ontouchstart>
+    <div class="container js_container" >
 
+    </div>
+
+    <script type="text/html" id="home.html">
+        <div class="vwo-page">
+            <div class="bd" style="height:100%;background-image: url('images/bg.jpg'); background-size: contain;">
+                <div style="margin:0 auto; text-align: center; padding:20px;">
+                    <div style="margin:30px 40px 20px 40px;">
+                        <img style="width:100%;" src="images/food.png"/>
+                    </div>
+                    <div class="vwo-row" style="padding:0;">
+                        <span class="vwo-fn14">您的验证手机号码为：</span>
+                        <span class="vwo-fn20" style="font-weight: bold;">18912342234</span>
+                    </div>
+                    <div class="vwo-row" style="padding:0;">
+                        <span class="vwo-fn14">请输入收到的验证码：</span>
+                    </div>
+                    <div class="vwo-row">
+                        <div class="vwo-w6" style="display: inline-block; vertical-align: bottom;">
+                            <input class="vwo-input vwo-center vwo-w10" type="text" placeholder="输入验证码"/>
+                        </div>
+                        <div class="vwo-right" style="width:38%; display: inline-block;">
+                            <a class="vwo-button vwo-center vwo-BG-DFE0E1" style="font-size: 14px;">获取验证码</a>
+                        </div>
+                    </div>
+                    <div class="vwo-row">
+                        <a data-id="bossDetail" class="btn vwo-button vwo-center vwo-w10 vwo-BG-FAC733 vwo-bold">确认</a>
+                    </div>
+                </div>
+            </div>
+            <div style="position: fixed; bottom: 0;padding-bottom:5px;">
+                <div class="vwo-w10 vwo-center vwo-FFF vwo-fn20" style="font-weight: 100;">客服电话：<i style="text-decoration: underline;">96189</i></div>
+                <div class="vwo-w10 vwo-center vwo-FFF" style="font-weight: 100;">扬州广电新媒体运营中心 版权所有</div>
+            </div>
+        </div>
+    </script>
+
+    <script type="text/html" id="detail.html">
+        <div class="vwo-page vwo-BG-F7F8F9">
+            <div class="bd">
+                <div class="vwo-p2 vwo-shdow box">
+                    <h1 class="vwo-EC682F" style="font-weight: 100; line-height: initial; ">泰式酸辣蟹免费券</h1>
+                    <span>验证时间:2015.11.31 17:58:05</span>
+                    <div class="vwo-267AB4" style="margin-top: 10px;"><i class="shopImg"></i> 奔跑蟹海鲜餐厅</div>
+                </div>
+
+                <canvas class="process" width="200px" height="200px">61%</canvas>
+            </div>
+        </div>
+    </script>
+
+    <script src="scripts/zepto.min.js"></script>
+    <script src="scripts/app.js"></script>
 </body>
 </html>
