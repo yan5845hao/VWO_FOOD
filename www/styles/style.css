@@ -3,6 +3,10 @@
     padding:0;
     border:0;
 }
+*, :after, :before {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
 .vwo-page{
     position: absolute;
     top:0;
@@ -106,6 +110,16 @@
     margin:10px;
 }
 
+.vwo-m2-vertical{
+    margin:20px 0;
+}
+.vwo-m2-horizontal{
+    margin:0 20px;
+}
+.vwo-m2{
+    margin:20px;
+}
+
 .vwo-bold{
     font-weight: bold;
 }
@@ -164,6 +178,9 @@
 .vwo-424242{
     color:#424242;
 }
+.vwo-CBCBCB{
+    color:#CBCBCB;
+}
 
 .vwo-radius4{
     border-radius: 4px;
@@ -184,11 +201,23 @@
 .vwo-BG-FFFFFF{
     background-color: #FFFFFF;
 }
+.vwo-BG-F17F53{
+    background-color: #F17F53;
+}
+.vwo-BG-F1F1F1{
+    background-color: #F1F1F1;
+}
+.vwo-BG-FAFAFA{
+    background-color: #FAFAFA;
+}
 .vwo-BG-F6F5F7{
     background-color: #F6F5F7;
 }
 .vwo-BG-F7F8F9{
     background-color: #F7F8F9;
+}
+.vwo-BG-F3F2F7{
+    background-color: #F3F2F7;
 }
 .vwo-BG-F9F9F9{
     background-color: #F9F9F9;
@@ -422,6 +451,31 @@
     top: 0;
     color:#fff;
 }
+.foodCard{
+    position: relative;
+    border-radius: 5px;
+    background: url('../images/line.png') #FFF repeat-x;
+    background-position: 0 -5px;
+}
+
+.foodCard > span:first-child{
+    font-size:30px;
+    display:block;
+    line-height: initial;
+    font-weight: inherit;
+    margin-top: 10px;
+}
+.foodCard > span:last-child{
+    margin-bottom: 10px;
+    display:block;
+}
+
+.foodCard > i {
+    font-size: 40px;
+    position: absolute;
+    right:10px;
+    top:20px;
+}
 
 .instructions{
     font-style: italic;
@@ -436,6 +490,7 @@
 
 .vwo-dialog ul{
     padding:10px 10px 20px 40px;
+    vertical-align: middle;
 }
 
 .vwo-dialog ul li{
@@ -499,7 +554,11 @@
     border-radius: 50%;
     box-shadow: inset 0 0 0 .1em rgba(58, 168, 237, .2);
 }
-
+.detail-close{
+    position: absolute;
+    right:10px;
+    top:15px;
+}
 .spinner i {
     position: absolute;
     clip: rect(0, 1em, 1em, .5em);
@@ -537,4 +596,58 @@
     100% {
         transform: rotate(180deg);
     }
+}
+
+.left{
+    float: left; display: block;
+}
+.content{
+    display: none;
+}
+.content.active{
+    display: block;
+}
+.food-group{
+    position: relative;
+    overflow: hidden;
+}
+.food-group input[type=file]{
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    opacity: 0;
+    cursor: pointer;
+    font-size: 50rem;
+}
+ul,img{
+    vertical-align: middle;
+}
+.input-group{
+    padding:0px 20px;
+}
+.input-group > div{
+    position: relative;
+}
+.input-group > div > i{
+    position: absolute;
+    right:1px;
+    top:6px;
+    width:35px;
+    height:35px;
+    line-height: 35px;
+    text-align: center;
+}
+.input-group > div > input{
+    margin:5px 0;
+    width:100%;
+    padding:10px 40px 10px 10px;
+    border:1px solid #E4E4E4;
+}
+
+.btn-shdow{
+    -moz-box-shadow:2px 2px 10px #06c;
+    -webkit-box-shadow:2px 2px 10px #06c;
+    box-shadow:2px 2px 10px #06c;
 }

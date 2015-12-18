@@ -69,6 +69,21 @@ $(function () {
         });
     });
 
+    $container.on('click', '.tab', function(){
+        $('.tab').removeClass('active');
+        $(this).addClass('active');
+        $('.content').removeClass('active');
+        $('.' + $(this).attr('data-id')).addClass('active');
+    });
+
+    $container.on('click', '.foodQrcode', function(){
+        $('.qrcode-dialog').show();
+        $('.img-qrcode').attr('src','images/face.png');
+        $('.qrcode-dialog').find('.detail-close').on('click', function () {
+            $('.qrcode-dialog').hide();
+        });
+    });
+
     // toast
     $container.on('click', '#showToast', function () {
         $('#toast').show();
