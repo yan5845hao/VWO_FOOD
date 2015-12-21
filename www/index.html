@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
     <title>朋友美食圈</title>
+    <link rel="stylesheet" href="styles/font-awesome.css">
     <link rel="stylesheet" href="styles/weui.css"/>
     <link rel="stylesheet" type="text/css" href="styles/style.css"/>
 </head>
@@ -12,7 +13,7 @@
 
     </div>
 
-    <script type="text/html" id="home.html">
+    <script type="text/html" id="home_html">
         <div class="vwo-page">
             <div class="bd" style="height:100%;background-image: url('images/bg.jpg'); background-size: contain;">
                 <div style="margin:0 auto; text-align: center; padding:20px;">
@@ -28,14 +29,14 @@
                     </div>
                     <div class="vwo-row">
                         <div class="vwo-w6" style="display: inline-block; vertical-align: bottom;">
-                            <input class="vwo-input vwo-center vwo-w10" type="text" placeholder="输入验证码"/>
+                            <input class="vwo-input vwo-center vwo-w10" style="height: 40px;" type="text" placeholder="输入验证码"/>
                         </div>
                         <div class="vwo-right" style="width:38%; display: inline-block;">
-                            <a class="vwo-button vwo-center vwo-BG-DFE0E1" style="font-size: 14px;">获取验证码</a>
+                            <a class="vwo-button vwo-center vwo-BG-DFE0E1" style="font-size: 14px;height:40px;">获取验证码</a>
                         </div>
                     </div>
                     <div class="vwo-row">
-                        <a data-id="bossDetail" class="btn vwo-button vwo-center vwo-w10 vwo-BG-FAC733 vwo-bold">确认</a>
+                        <a data-id="bossDetail" class="btn vwo-button vwo-center vwo-w10 vwo-BG-FAC733 vwo-bold" style="height: 40px;">确认</a>
                     </div>
                 </div>
             </div>
@@ -46,7 +47,7 @@
         </div>
     </script>
 
-    <script type="text/html" id="detail.html">
+    <script type="text/html" id="detail_html">
         <div class="vwo-page vwo-BG-F7F8F9">
             <div class="bd">
                 <div class="vwo-p2 vwo-shdow box">
@@ -56,6 +57,227 @@
                 </div>
 
                 <canvas class="process" width="200px" height="200px">61%</canvas>
+            </div>
+        </div>
+    </script>
+
+    <!-- START 我是商家-->
+    <script type="text/html" id="shop_html">
+        <div class="vwo-page vwo-BG-F3F2F7">
+            <div class="bd">
+                <div class="shopTop shopTopI vwo-BG-F5A631 vwo-FFFFFF">
+                    <div class="info left vwo-center">
+                        <img src="images/face.png"/>
+                        <div class="vwo-m1-top">港庭茶餐厅 <i class="fa fa-pencil"></i></div>
+                    </div>
+                    <div class="right">
+                        <span class="vwo-fnxl">推荐数</span>
+                        <div class="vwo-fnSSS" style="line-height: 50px;">1001<span style="font-size: 30px;">条</span></div>
+                        <span>查看所有推荐>></span>
+                    </div>
+                </div>
+                <div class="shopCount vwo-p1">
+                    <div class="left">
+                        <span>已有</span>
+                        <div class="vwo-fnSSS" style="line-height: 50px;">2776<span style="font-size: 30px;">人</span></div>
+                        <span>看过您的店</span>
+                    </div>
+                    <div class="right">
+                        <span>已有</span>
+                        <div class="vwo-fnSSS" style="line-height: 50px;">2314<span style="font-size: 30px;">人</span></div>
+                        <span>分享过您的店</span>
+                    </div>
+                </div>
+                <div class="vwo-clear" style="padding-top:5px;">
+                    <div class="shopTitle vwo-BG-E4E4E4">
+                        <span class="title vwo-fnxl vwo-p1-horizontal vwo-A9A9A9">我家的券</span>
+                        <span class="btn vwo-FFFFFF vwo-fnxl vwo-BG-F5A631" data-id="coupon"><i class="fa fa-plus"></i> 发新券</span>
+                    </div>
+                </div>
+                <div class="vwo-BG-FFFFFF">
+                    <ul>
+                        <li class="vwo-item vwo-p2">
+                            <i class="fa fa-ticket vwo-F5A731"></i> 红烧肉免单券
+                            <span class="vwo-fns">审核中...</span>
+                            <p class="vwo-fns vwo-A9A9A9 vwo-p2-horizontal">老娘看了就斤斤计较斤斤计较斤斤计较斤斤计较斤斤计较斤斤计较斤斤计较斤斤计较斤斤计较</p>
+                            <i class="fa fa-caret-down vwo-A9A9A9"></i>
+                        </li>
+                        <li class="vwo-item vwo-p2">
+                            <i class="fa fa-ticket vwo-F5A731"></i> 红烧肉免单券
+                            <span class="vwo-fns">已领取10/10</span>
+                            <p class="vwo-fns vwo-A9A9A9 vwo-p2-horizontal">有效期: 2015.12.05-2015.12.30</p>
+                            <p class="vwo-fns vwo-A9A9A9 vwo-p2-horizontal">老娘看了就斤斤计较斤斤计较斤斤计较斤斤计较斤斤计较斤斤计较斤斤计较斤斤计较斤斤计较</p>
+                            <i class="fa fa-caret-down vwo-A9A9A9"></i>
+                        </li>
+                        <li class="vwo-item vwo-p2 vwo-A9A9A9">
+                            <i class="fa fa-ticket"></i> 红烧肉免单券
+                            <span class="vwo-fns">已领取10/10</span>
+                            <p class="vwo-fns vwo-p2-horizontal">有效期: 2015.12.05-2015.12.30</p>
+                            <p class="vwo-fns vwo-p2-horizontal">老娘看了就斤斤计较斤斤计较斤斤计较斤斤计较斤斤计较斤斤计较斤斤计较斤斤计较斤斤计较</p>
+                            <i class="fa fa-caret-down"></i>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </script>
+    <!-- END 我是商家-->
+
+    <!-- START 基本信息 , 美食信息-->
+    <script type="text/html" id="info_html">
+        <div class="vwo-page vwo-BG-F3F2F7">
+            <div class="bd">
+                <div class="shopTop vwo-p3-vertical vwo-center vwo-BG-F5A631">
+                    <img src="images/face.png"/>
+                    <div class="vwo-m1-top" style="height:10px;">
+                        <div class="shopTab tab active vwo-w5 left vwo-center" data-id="tab1">基本信息</div>
+                        <div class="shopTab tab vwo-w5 right vwo-center" data-id="tab2">美食信息</div>
+                    </div>
+                </div>
+                <div class="tab1 content vwo-m1-top active">
+                    <div class="vwo-m1-horizontal shopInput">
+                        <div class="vwo-p1-vertical title">
+                            <a class="vwo-p1 vwo-fn16 vwo-A9A9A9" style="height:40px;">店名</a>
+                        </div>
+                        <div class="vwo-w6 vwo-p1-vertical input">
+                            <input class="vwo-input vwo-right vwo-fn16 vwo-w10 vwo-BG-TRANSPARENT" type="text" value="港庭茶餐厅"/>
+                        </div>
+                    </div>
+                    <div class="vwo-m1-horizontal shopInput">
+                        <div class="vwo-p1-vertical title">
+                            <a class="vwo-p1 vwo-fn16 vwo-A9A9A9" style="height:40px;">地址</a>
+                        </div>
+                        <div class="vwo-w6 vwo-p1-vertical input">
+                            <input class="vwo-input vwo-right vwo-fn16 vwo-w10 vwo-BG-TRANSPARENT" type="text" value="港庭茶餐厅"/>
+                        </div>
+                    </div>
+                    <div class="vwo-m1-horizontal shopInput">
+                        <div class="vwo-p1-vertical title">
+                            <a class="vwo-p1 vwo-fn16 vwo-A9A9A9" style="height:40px;">电话</a>
+                        </div>
+                        <div class="vwo-w6 vwo-p1-vertical input">
+                            <input class="vwo-input vwo-right vwo-fn16 vwo-w10 vwo-BG-TRANSPARENT" type="text" value="港庭茶餐厅"/>
+                        </div>
+                    </div>
+                    <div class="vwo-m1-horizontal shopInput">
+                        <div class="vwo-p1-vertical title">
+                            <a class="vwo-p1 vwo-fn16 vwo-A9A9A9" style="height:40px;">验证手机号</a>
+                        </div>
+                        <div class="vwo-w6 vwo-p1-vertical input">
+                            <input class="vwo-input vwo-right vwo-fn16 vwo-w10 vwo-BG-TRANSPARENT" type="text" value="港庭茶餐厅"/>
+                        </div>
+                    </div>
+                    <span class="foodFt vwo-095AAC vwo-p1" style="margin-top:10px;display: block; font-size: 10px;">＊验证手机号用于绑定和解绑管理员，不会被显示在客户端</span>
+                    <div class="btn-shdow vwo-m2-horizontal vwo-p1">保存</div>
+                </div>
+                <div class="tab2 content vwo-m1-top">
+                    <div class="vwo-m1-horizontal shopInput">
+                        <div class="vwo-p1-vertical">
+                            <a class="vwo-p1 vwo-fn16 vwo-A9A9A9" style="height:40px;">红油小火锅</a>
+                            <i class="fa fa-pencil vwo-F5A731"></i>
+                        </div>
+                        <div class="remove">删除</div>
+                    </div>
+                    <div class="vwo-m1-horizontal shopInput">
+                        <div class="vwo-p1-vertical">
+                            <a class="vwo-p1 vwo-fn16 vwo-A9A9A9" style="height:40px;">香辣大闸蟹山山水水说上</a>
+                            <i class="fa fa-pencil vwo-F5A731"></i>
+                        </div>
+                        <div class="remove">删除</div>
+                    </div>
+                    <div class="btn shopFroot" data-id="product">
+                        <img src="images/add_item.png" style="width:80px;"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </script>
+    <!-- END 基本信息 , 美食信息-->
+
+    <!-- START 添加美食信息-->
+    <script type="text/html" id="product_html">
+        <div class="vwo-page vwo-BG-F3F2F7">
+            <div class="bd">
+                <div class="input-group">
+                    <div>
+                        <input type="text" placeholder="填写美食名称"/>
+                    </div>
+                </div>
+
+                <ul id="camer-images" class="vwo-p1-horizontal vwo-w10">
+                    <li class="text-center vwo-p05" style="width: 30%; float: left; " id="camer-image" >
+                        <div class="food-group">
+                            <img class="am-thumbnail border-radius-5p" style="margin-bottom: 0px; width:100%;" src="images/add_pic.png">
+                            <input type="file" capture="camera" accept="image/*" id="cameraInput" name="cameraInput">
+                        </div>
+                    </li>
+                </ul>
+
+                <div class="btn-shdow vwo-m2-horizontal vwo-p1">保存</div>
+            </div>
+        </div>
+    </script>
+    <!-- END 添加美食信息-->
+
+    <!-- START 添加优惠券-->
+    <script type="text/html" id="coupon_html">
+        <div class="vwo-page vwo-BG-F3F2F7">
+            <div class="bd">
+                <div class="input-group">
+                    <div>
+                        <input class="vwo-p1" type="text" placeholder="填写优惠券名称"/>
+                    </div>
+                </div>
+                <span class="foodFt vwo-CBCBCB">例：红烧肉免单券／20元代金券／8折优惠券</span>
+                <div class="input-group">
+                    <div>
+                        <input class="vwo-p1" type="text" placeholder="填写数量"/>
+                    </div>
+                </div>
+                <div class="input-group">
+                    <div>
+                        <textarea class="vwo-p1" style="margin:5px 0;width:100%; border: 1px solid #E4E4E4;" placeholder="使用说明"></textarea>
+                    </div>
+                </div>
+                <span class="foodFt vwo-095AAC">核验人联系方式：18912342234</span>
+                <div class="btn-shdow vwo-m2-horizontal vwo-p1">提交优惠券</div>
+                <span class="foodFt vwo-CBCBCB vwo-center" style="margin-top: 10px; display: block;">提交成功后我们工作人员会联系您发券事宜</span>
+            </div>
+        </div>
+    </script>
+    <!-- END 添加优惠券-->
+
+
+    <script type="text/html" id="phone_html">
+        <div class="vwo-page vwo-BG-F3F2F7">
+            <div class="bd">
+                <span class="foodFt vwo-CBCBCB vwo-m1-vertical" style="display: block;">原验证手机号：<span style="color:#000;">18912342234</span></span>
+                <div class="input-group">
+                    <div class="vwo-row">
+                        <div class="vwo-w6" style="display: inline-block; vertical-align: bottom;">
+                            <input class="vwo-input vwo-center vwo-w10" style="height: 40px;" type="text" placeholder="输入验证码"/>
+                        </div>
+                        <div class="vwo-right" style="width:38%; display: inline-block;">
+                            <a class="vwo-button vwo-center vwo-BG-DFE0E1" style="font-size: 14px;height:40px;">获取验证码</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="input-group">
+                    <div>
+                        <input class="vwo-p1" style="height: 40px; border:0;" type="text" placeholder="输入新号码"/>
+                    </div>
+                </div>
+                <div class="input-group">
+                    <div class="vwo-row">
+                        <div class="vwo-w6" style="display: inline-block; vertical-align: bottom;">
+                            <input class="vwo-input vwo-center vwo-w10" style="height: 40px;" type="text" placeholder="输入验证码"/>
+                        </div>
+                        <div class="vwo-right" style="width:38%; display: inline-block;">
+                            <a class="vwo-button vwo-center vwo-BG-DFE0E1" style="font-size: 14px;height:40px;">获取验证码</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="btn-shdow vwo-m2-horizontal vwo-p1">确认提交</div>
             </div>
         </div>
     </script>

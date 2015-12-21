@@ -15,6 +15,13 @@
     right:0;
     background-color: #FFF;
 }
+
+li,p {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
 .vwo-w2{
     width:20%;
     display: inline-block;
@@ -60,6 +67,10 @@
     padding:5px 0;
 }
 
+.vwo-fn12{
+    font-size: 12px;
+}
+
 .vwo-fn14{
     font-size: 14px;
 }
@@ -92,8 +103,28 @@
 .vwo-p1{
     padding:10px;
 }
+
+.vwo-p2-vertical{
+    padding:20px 0;
+}
+
+.vwo-p2-horizontal{
+    padding:0 20px;
+}
+
 .vwo-p2{
     padding:20px;
+}
+
+.vwo-p3-vertical{
+    padding:30px 0;
+}
+.vwo-p3-horizontal{
+    padding:0 30px;
+}
+
+.vwo-p3{
+    padding:30px;
 }
 
 .vwo-m1-top{
@@ -123,7 +154,9 @@
 .vwo-bold{
     font-weight: bold;
 }
-
+.vwo-clear{
+    clear: both;
+}
 .vwo-input{
     width:100%;
     padding:10px 0;
@@ -169,6 +202,9 @@
 .vwo-F17F53{
     color:#F17F53;
 }
+.vwo-F5A731{
+    color: #F5A731;
+}
 .vwo-267AB4{
     color:#267AB4;
 }
@@ -181,13 +217,38 @@
 .vwo-CBCBCB{
     color:#CBCBCB;
 }
+.vwo-D6D6D6{
+    color:#D6D6D6;
+}
+.vwo-095AAC{
+    color:#095AAC;
+}
 
 .vwo-radius4{
     border-radius: 4px;
 }
 
+.vwo-BSOLID{
+    border-style: solid;
+}
+
+.vwo-B1{
+    border-width: 1px;
+}
+
+.vwo-B2{
+    border-width: 2px;
+}
+
 .vwo-B-46AAE2{
     border-color: #46AAE2;
+}
+
+.vwo-BTREN{
+    border-color: transparent;
+}
+.vwo-B-FBD329{
+    border-color: #FBD329;
 }
 .vwo-B-60C8B5{
     border-color: #60C8B5;
@@ -197,6 +258,11 @@
 }
 .vwo-B-DFE0E1{
     border:1px solid #DFE0E1;
+}
+
+
+.vwo-BG-TRANSPARENT{
+    background-color: transparent;
 }
 .vwo-BG-FFFFFF{
     background-color: #FFFFFF;
@@ -222,10 +288,15 @@
 .vwo-BG-F9F9F9{
     background-color: #F9F9F9;
 }
+.vwo-BG-E4E4E4{
+    background-color: #E4E4E4;
+}
 .vwo-BG-DFE0E1{
     background-color: #DFE0E1;
 }
-
+.vwo-BG-F5A631{
+    background-color: #F5A631;
+}
 .vwo-BG-FAC733{
     background-color: #FAC733;
 }
@@ -411,7 +482,7 @@
     display: inline-block;
     border-radius: 25px;
     color: #ccc;
-    width: 100px;
+    width: 130px;
     border-width: 2px;
     border-style: solid;
 }
@@ -601,6 +672,9 @@
 .left{
     float: left; display: block;
 }
+.right{
+    float: right; display: block;
+}
 .content{
     display: none;
 }
@@ -610,6 +684,18 @@
 .food-group{
     position: relative;
     overflow: hidden;
+}
+.food-group > img{
+    width:100%;
+}
+.food-group > .imgRemove{
+    background-image: url('../images/delete_pic.png');
+    background-size: cover;
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    right: 0px;
+    top: 0px;
 }
 .food-group input[type=file]{
     position: absolute;
@@ -650,4 +736,208 @@ ul,img{
     -moz-box-shadow:2px 2px 10px #06c;
     -webkit-box-shadow:2px 2px 10px #06c;
     box-shadow:2px 2px 10px #06c;
+    border-radius: 3px;
+    margin-top:30px;
+    color:#FFFFFF;
+    text-align: center;
+    background-color: #F17F53;
+}
+
+.vwo-list > li{
+    padding: 10px 10px 10px 90px;
+    position: relative;
+    height: 80px;
+    border-bottom:1px solid #EAEAEA;
+}
+
+.vwo-list > li > img{
+    position:absolute;
+    top:10px;
+    left:20px;
+    width:60px;
+    height:60px;
+}
+
+.vwo-list > li > span{
+    line-height: 60px;
+}
+
+.vwo-list > li > i{
+    position: absolute;
+    right:20px;
+    top:40%;
+}
+
+.vwo-item{
+    border-bottom: 1px solid #D3D3D3;
+    position: relative;
+}
+
+.vwo-item > i:last-child{
+    position: absolute;
+    right:20px;
+    bottom:20px;
+}
+.vwo-item span{
+    position: absolute;
+    right:20px;
+}
+.foodFt{
+    font-size: 14px;
+    padding: 0 20px;
+}
+.shopTop > img,
+.shopTop > .info > img{
+    width:80px;
+    height:80px;
+    border-radius: 50%;
+}
+.shopTab{
+    border-bottom:4px solid transparent;
+    height:40px;
+    line-height:30px;
+    color:#FBDFC5;
+}
+.shopTab.active{
+    color:#FFF;
+    font-weight: bold;
+    border-bottom:4px solid #FBD392;
+}
+.shopInput{
+    position: relative;
+    border-bottom: 1px solid #D3D3D3;
+}
+.shopInput > .title{
+    width:38%;
+    display: inline-block;
+}
+.shopInput > .input{
+    display: inline-block;
+    vertical-align: bottom;
+}
+.shopInput > .remove{
+    position: absolute;
+    right:20px;
+    top:10px;
+    color:#EE5D64;
+}
+.shopFroot{
+    position: fixed;
+    bottom: -2px;
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+    width: 100%;
+}
+
+.shopCount{
+    position: relative;
+    margin:0 auto;
+    text-align: center;
+}
+.shopCount > .left{
+    display: inline-block;
+    width:50%;
+}
+.shopCount > .right{
+    border-left: 1px solid #F5A631;
+    display: inline-block;
+    width:50%;
+}
+.shopCount span{
+    font-size: 20px;
+}
+
+.shopCount span:last-child{
+    font-size: 16px;
+}
+
+.shopTitle{
+    margin-top:10px;
+    height:50px;
+    position: relative;
+}
+.shopTitle > .title{
+    height:50px;
+    line-height: 50px;
+}
+.shopTitle > .btn{
+    position: absolute;
+    right:10px;
+    top:5px;
+    padding:0px 20px;
+    height:40px;
+    line-height: 40px;
+    border-radius: 20px;
+}
+
+.shopTopI {
+    font-size: 16px;
+    padding: 30px 20px 10px 20px;
+    height: 160px;
+}
+
+.vwo-fns{
+    font-size: 10px;
+}
+.vwo-fnm{
+    font-size: 12px;
+}
+.vwo-fnl{
+    font-size: 14px;
+}
+.vwo-fnxl{
+    font-size: 16px;
+}
+
+.vwo-fnS{
+    font-size: 20px;
+}
+
+.vwo-fnSSS{
+    font-size: 40px;
+}
+
+@media screen and (min-width: 375px) {
+    .shopTitle{
+        margin-top:10px;
+        height:60px;
+        position: relative;
+    }
+    .shopTitle > .title{
+        height:60px;
+        line-height: 60px;
+    }
+    .shopTitle > .btn{
+        position: absolute;
+        right:10px;
+        top:10px;
+        padding:0px 20px;
+        height:40px;
+        line-height: 40px;
+        border-radius: 20px;
+    }
+    .vwo-fns{
+        font-size: 12px;
+    }
+    .vwo-fnm{
+        font-size: 14px;
+    }
+    .vwo-fnl{
+        font-size: 16px;
+    }
+    .vwo-fnxl{
+        font-size: 20px;
+    }
+    .vwo-fnS{
+        font-size: 30px;
+    }
+    .vwo-fnSSS{
+        font-size: 50px;
+    }
+    .shopTopI{
+        font-size:20px;
+        padding: 30px 20px 10px 20px;
+        height: 160px;
+    }
 }

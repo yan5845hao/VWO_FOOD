@@ -13,6 +13,7 @@
 <div class="container js_container">
 
 </div>
+<!-- START 美食圈-->
 <script type="text/html" id="home_html">
     <div class="vwo-page">
         <div class="bd">
@@ -56,6 +57,9 @@
         </div>
     </div>
 </script>
+<!-- END 美食圈-->
+
+<!-- START 美食圈详情-->
 <script type="text/html" id="detail_html">
     <div class="vwo-page ">
         <div class="bd vwo-BG-F9F9F9">
@@ -147,6 +151,9 @@
         </div>
     </div>
 </script>
+<!-- END 美食圈详情-->
+
+<!-- START 我的推荐,我的免单券-->
 <script type="text/html" id="groom_html">
     <div class="vwo-page ">
         <div class="bd">
@@ -244,14 +251,17 @@
         </div>
     </div>
 </script>
+<!-- END 我的推荐,我的免单券-->
+
+<!-- START 新建推荐美食-->
 <script type="text/html" id="food_html">
     <div class="vwo-page vwo-BG-F3F2F7">
         <div class="bd">
             <textarea placeholder="推荐理由" class="vwo-w10 vwo-p1 vwo-fn16" style="height:80px;"></textarea>
             <ul id="camer-images" class="vwo-p1-horizontal vwo-w10">
-                <li class="text-center vwo-p05" style="width: 30%; float: left; " id="camer-image" >
+                <li id="camer-image" class="text-center vwo-p05" style="width: 30%; float: left; " >
                     <div class="food-group">
-                        <img class="am-thumbnail border-radius-5p" style="margin-bottom: 0px; width:100%;" src="images/add_pic.png">
+                        <img src="images/add_pic.png">
                         <input type="file" capture="camera" accept="image/*" id="cameraInput" name="cameraInput">
                     </div>
                 </li>
@@ -267,11 +277,55 @@
                 </div>
             </div>
 
-            <div style="border-radius: 3px; margin-top:10px;" class="btn-shdow vwo-center vwo-FFFFFF vwo-BG-F17F53 vwo-m2-horizontal vwo-p1">发布推荐</div>
+            <div class="btn-shdow vwo-center vwo-FFFFFF vwo-BG-F17F53 vwo-m2-horizontal vwo-p1">发布推荐</div>
+
+
+
         </div>
     </div>
 </script>
+<!-- END 新建推荐美食-->
+
+<!-- START 搜索-->
+<script type="text/html" id="search_html">
+    <div class="vwo-page vwo-BG-FFFFFF">
+        <div class="bd">
+            <div class="vwo-BG-F9F9F9 vwo-p1" style="height:60px;">
+                <div class="vwo-w7 left" style="position: relative;">
+                    <i class="fa fa-search vwo-D6D6D6" style="position: absolute; top:12px; left:12px;"></i>
+                    <i class="fa fa-times-circle vwo-D6D6D6" style="position: absolute; top:12px; right:12px;"></i>
+                    <input class="vwo-fn16 vwo-w10" style="padding:10px 40px; height:40px;" type="text" placeholder="商家名称"/>
+                </div>
+                <div class="vwo-w3 right vwo-right">
+                    <div class="vwo-w8 vwo-center" style="height:40px; line-height: 40px; border:1px solid #E4E4E4;">取消</div>
+                </div>
+            </div>
+            <div>
+                <ul class="vwo-list">
+                    <li>
+                        <img src="images/face.png"/>
+                        <span>多伦多海鲜茶餐厅邗江路18号</span>
+                        <i class="fa fa-long-arrow-right"></i>
+                    </li>
+                    <li>
+                        <img src="images/face.png"/>
+                        <span>多伦多海鲜茶餐厅邗江路18号</span>
+                        <i class="fa fa-long-arrow-right"></i>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</script>
+<!-- END 搜索-->
+
 <script src="scripts/zepto.min.js"></script>
+<!--<script src="scripts/jquery1.3.2.js"></script>-->
+<script src="scripts/iscroll-zoom.js"></script>
+<script src="scripts/hammer.js"></script>
+<script src="scripts/lrz.bundle.js?v=4531b70"></script>
+<!--<script src="scripts/jquery.photoClip.js?v=2"></script>-->
+
 <script src="scripts/app.js"></script>
 </body>
 </html>
